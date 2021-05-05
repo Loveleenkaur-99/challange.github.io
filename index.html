@@ -1,9 +1,456 @@
-<?php
-$num=5;
-$fact = 1;
-for($i = $num; $i>=1;$i--)
-{
-	$fact = $fact* $i;
-	}
-	echo "factorail of $num is $fact";
-	?>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+ <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Bai Jamjuree' rel='stylesheet'>
+<style>
+ body{
+    width:1440px;
+    font size: 18px;
+    font-family: 'Bai Jamjuree';
+    font-weight: 400px, 600px;
+    color:hsl(201, 11%, 66%);
+  }
+  
+.container{
+      width:1440px;
+     }
+     .logo{
+      background-image: url("C:/xampp/htdocs/internship/images/bg-header-desktop.png");
+      height:300px;
+     }
+     img{
+      margin-top:120px;
+     }
+     .heading{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+}
+  .heading2{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+}
+
+.buttons{
+  display: flex;
+  justify-content:center;
+
+}
+button{
+  width:200px;
+  height:50px;
+  border:1px solid;
+border-radius: 80px;
+font-size: 18px; 
+  color:white;
+  margin-top: 40px;
+}
+.button2{
+  margin-left:10px;
+}
+.content{
+  display: flex;
+}
+  .heading3{
+    
+   color: hsl(210, 10%, 33%);
+     margin:205px 0px 0px 80px;
+   
+}
+ .heading4{
+   color: hsl(210, 10%, 33%);
+     margin:60px 0px 0px 80px;
+  
+}
+ .heading5{
+   color: hsl(210, 10%, 33%);
+   margin:60px 0px 0px 80px;
+}
+.headings{
+  display:flex;
+  
+}
+  .heading6{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+} 
+ .heading7{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+}
+ .heading8{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+.heading9{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+.heading10{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+   .heading11{
+    text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 130px;
+}
+p{
+  margin-left: 80px;
+}
+.content1{
+  display: flex;
+  justify-content: space-around;
+  
+}
+.logo1{
+  text-align: center;
+}
+.logo2{
+  text-align: center;
+}
+.logo3{
+  text-align: center;
+}
+.icon{
+  display: flex;
+  justify-content: space-around;
+}
+.footer{
+  display: flex;
+  background-color:#F5F5F5;
+  margin-top: 110px;
+
+}
+.footer img{
+margin:30px 0px 30px 30px;
+}
+
+
+
+
+.device{
+  text-align: center;
+}
+.facebook{
+      display: inline-flex;
+margin:10px 0px 0px 300px;
+}
+.fcontent ul li{
+  display: flex;
+  flex-direction: column;
+}
+.f1content ul li{
+  display: flex;
+  flex-direction: column;
+}
+.f2content ul li{
+  margin: 10px;
+}
+.footer1{
+display: flex;
+  margin: 10px 0px 0px 110px;
+
+}
+ul li{
+  
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-around;
+  margin:25px 0px 0px 90px;
+  }
+ @media screen and (max-width: 380px) {
+  body {
+    width: 375px;
+    font size: 18px;
+    font-family: 'Bai Jamjuree';
+    font-weight: 400px, 600px;
+    color:hsl(201, 11%, 66%);
+    overflow-x: hidden;
+  }
+  .container{
+      width: 375px;
+      
+  }
+  .logo{
+    background-image: url("C:/xampp/htdocs/internship/images/bg-header-mobile.png");
+    background-repeat:no-repeat;
+    text-align: center;
+  }
+  .icon img{
+    height:80px;
+    width:200px;
+    margin-left: 110px;
+  }
+   img{
+      margin-top:120px;
+     }
+     .heading{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+  }
+
+  .heading2{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+}
+.device img{
+  width:350px;
+  height: 200px;
+}
+.buttons{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+}
+button{
+  width:350px;
+  height:50px;
+  border:1px solid;
+border-radius: 80px;
+font-size: 18px; 
+  color:white;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+.button2{
+  margin-left:0px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+}
+  .heading3{
+    text-align: center;
+   color: hsl(210, 10%, 33%);
+     margin-top:25px;
+   
+}
+ .heading4{
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+     margin-top:25px;
+  
+}
+ .heading5{
+  text-align: center;
+ color: hsl(210, 10%, 33%);
+     margin-top:25px;
+}
+.headings{
+  display:flex;
+  
+}
+  .heading6{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+} 
+ .heading7{
+      text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 110px;
+}
+ .heading8{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+.heading9{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+.heading10{
+      
+      color: hsl(210, 10%, 33%);
+      
+}
+   .heading11{
+    text-align: center;
+      color: hsl(210, 10%, 33%);
+      margin-top: 160px;
+}
+p{
+  text-align: center;
+  margin-left: 10px;
+}
+.content1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.logo1{
+  text-align: center;
+
+}
+.logo2{
+  text-align: center;
+}
+.logo3{
+  text-align: center;
+}
+.icon{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  background-color:#F5F5F5;
+  margin-top: 110px;
+  margin-left: 0px;
+}
+.footer1{
+display: flex;
+flex-direction: column;
+  margin: 10px;
+
+}
+.footer img{
+  width: 50px;
+  margin-left:35px;
+}
+.footer h1 img{
+   display: flex;
+   flex-direction: column;
+   margin-left: 10px;
+}
+.footer h2 img{
+  margin: 50px;
+}
+.footer p{
+  display: flex;
+  color: hsl(210, 10%, 33%);
+  justify-content: space-around;
+ flex-direction: column;
+    margin:0px 0px 40px 35px;
+}
+.facebook{
+  display: flex;
+  margin:10px 0px 0px 40px;
+}
+ul li{
+  color: hsl(210, 10%, 33%);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+   margin:0px 0px 40px 0px;
+}
+
+
+}
+</style>
+</head>
+<body>
+     <div class = "container">
+           <div class = "logo">
+        
+        <center><img src="file:///C:/xampp/htdocs/internship/images/logo.svg"></center>
+</div>
+<div class = "heading">
+  <b><h1>A history of everything you copy</h1></b>
+  </div>
+  <center>Clipboard allows you to track and organize everything you copy. Instantly<br>access your clipboard on all your devices.</center>
+  <div class = "buttons">
+    <button style="background-color:hsl(171, 66%, 44%)">Download for iOS</button>
+    <div class = "button2">
+      <button style="background-color:hsl(233, 100%, 69%)">Download for Mac</button>
+  </div>
+</div>
+  <div class = "heading2">
+  <h2>Keep track of your snippets</h2>
+  </div>
+  <center> Clipboard instantly stores any item you copy in the cloud, meaning you can access<br> your snippets immediately on all your devices. Our Mac and iOS apps will help you<br> organize everything.</center>
+     <div class = "content">
+
+  <img src="C:\xampp\htdocs\internship\images\image-computer.png">
+         <div class = "contents">
+        <div class="heading3">
+          <h3>Quick Search</h3></div>
+          <p>Easily search your snippets by content,<br> category, web address, application, and more.</p>
+           <div class="heading4">
+           <h3>iCloud Sync</h3></div>
+            <p>Instantly saves and syncs snippets across all<br> your devices.</p>
+             <div class="heading5">
+             <h3>Complete History </h3></div>
+             <p>Retrieve any snippets from the first moment<br> you started using the app. </p>
+            </div>
+            </div>
+            <div class = "heading6">
+  <b><h1>Access Clipboard anywhere</h1></b>
+  </div>
+  <center> Whether you’re on the go, or at your computer, you can access all your Clipboard <br>snippets in a few simple clicks.</center>
+          <div class = "device"><img src="C:\xampp\htdocs\internship\images\image-devices.png"></div>
+                <div class = "heading7">
+  <b><h1> Supercharge your workflow </h1></b>
+  </div>
+  <center>  We’ve got the tools to boost your productivity.</center>
+  <div class = "content1">
+    <div class = "logo1">
+      <img src="file:///C:/Users/HP/Downloads/clipboard-landing-page-master/images/icon-blacklist.svg">
+      <div class = "heading8">
+  <b><h1> Create blacklists </h1></b>
+  </div>
+  Ensure sensitive information never makes its<br>way to your clipboard by excluding certain<br>sources.</div>
+      <div class = "logo2">
+        <img src="file:///C:/xampp/htdocs/internship/images/icon-text.svg">
+          <div class = "heading9">
+  <b><h1>Plain text snippets</h1></b>
+  </div>
+  Remove unwanted formatting from copied text<br>for a consistent look</div>
+        <div class = "logo3">
+          <img src="file:///C:/xampp/htdocs/internship/images/icon-preview.svg">
+            <div class = "heading10">
+  <b><h1>Sneak preview</h1></b>
+  </div>
+Quick preview of all snippets on your Clipboard<br> for easy access.
+        </div>
+      </div>
+        <div class = "icon">
+        <img src="file:///C:/xampp/htdocs/internship/images/logo-google.png">
+        <img src="file:///C:/xampp/htdocs/internship/images/logo-ibm.png">
+        <img src="file:///C:/xampp/htdocs/internship/images/logo-microsoft.png">
+        <img src="file:///C:/xampp/htdocs/internship/images/logo-hp.png">
+        <img src="file:///C:/xampp/htdocs/internship/images/logo-vector-graphics.png">
+      </div>
+
+      <div class = "heading11">
+  <b><h1>Clipboard for iOS and Mac OS </h1></b>
+  </div>
+  <center>Available for free on the App Store. Download for Mac or iOS, sync with iCloud and<br> you’re ready to start adding to your clipboard.</center>
+  <div class = "buttons">
+    <button style="background-color:hsl(171, 66%, 44%)">Download for iOS</button>
+    <div class = "button2">
+      <button style="background-color:hsl(233, 100%, 69%)">Download for Mac</button></div>
+    </div>
+      <div class ="footer">
+        <div class ="footer1">
+       <center><img src="file:///C:/xampp/htdocs/internship/images/logo.svg" height="50px"></center>
+        
+        <div class = "fcontent"><ul><li>FAQs</li> <li>Contact Us</li></ul></div>
+        <div class = "f1content"><ul><li>Privacy Policy</li> <li>Press Kit</li></ul></div>
+        <div class = "f2content">
+        <ul><li>Install Guide</li></ul></div>
+        <div class = "facebook"><img src="file:///C:/xampp/htdocs/internship/images/icon-facebook.svg"  height="20px">
+        <img src="file:///C:/xampp/htdocs/internship/images/icon-twitter.svg" height="20px">
+        <img src="file:///C:/xampp/htdocs/internship/images/icon-instagram.svg" height="20px"> </div>     </div>
+      </div>
+            </div> 
+          
+        </body>
+  </html>
